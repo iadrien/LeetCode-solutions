@@ -3,6 +3,10 @@ public:
     bool validateBinaryTreeNodes(int n, vector<int>& leftChild, vector<int>& rightChild) {
         
         /*
+        LC 1361: Validate Binary Tree Nodes
+        LC link: https://leetcode.com/problems/validate-binary-tree-nodes/
+        LC difficulty: Medium
+        
         Assumptions: 
         
         1. Any node can be the root, but there is only one root node 
@@ -74,31 +78,31 @@ Problem: assumption that 0 is the root node
 //         return true;
     }
     
-    void depthFirstTraversal(int index, vector<int>& leftChild, vector<int>&rightChild, vector<int>&visited){
-        visited[index] = 1;
+//     void depthFirstTraversal(int index, vector<int>& leftChild, vector<int>&rightChild, vector<int>&visited){
+//         visited[index] = 1;
         
-        if(leftChild[index]==-1 && rightChild[index]==-1){
-            return;
-        }
+//         if(leftChild[index]==-1 && rightChild[index]==-1){
+//             return;
+//         }
         
-        if(leftChild[index]!=-1){
-            if(visited[leftChild[index]]!=0){
-                visited[leftChild[index]]=-1;
-            }else{
-                depthFirstTraversal(leftChild[index], leftChild, rightChild, visited);
-            }
-        }
+//         if(leftChild[index]!=-1){
+//             if(visited[leftChild[index]]!=0){
+//                 visited[leftChild[index]]=-1;
+//             }else{
+//                 depthFirstTraversal(leftChild[index], leftChild, rightChild, visited);
+//             }
+//         }
         
-        if(rightChild[index]!=-1){
-            if(visited[rightChild[index]!=0]){
-                visited[rightChild[index]]=-1;
-            }else{
-                depthFirstTraversal(rightChild[index], leftChild, rightChild, visited);
-            }
-        }
+//         if(rightChild[index]!=-1){
+//             if(visited[rightChild[index]!=0]){
+//                 visited[rightChild[index]]=-1;
+//             }else{
+//                 depthFirstTraversal(rightChild[index], leftChild, rightChild, visited);
+//             }
+//         }
         
         
-        return;
+//         return;
         
-    }
-};
+//     }
+// };
